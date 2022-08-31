@@ -2,12 +2,11 @@ const Todo = require("../models/todo");
 
 const TodoController = {
     index: async (req, res) => {
-      console.log("test");
       Todo.find().exec((err, allTodos) => {
         if (err) {
           throw err
         }
-        console.log(allTodos)
+        return res.json(allTodos);
       })
     },
     create: async (req, res) => {
