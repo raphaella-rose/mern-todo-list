@@ -1,9 +1,21 @@
-import Todo from "./Todo";
+import TodoList from "./TodoList";
 
-const dummyTodo = {
-  title: "Wash the dog",
-  content: "Strawberry shampoo"
-}
+const dummyTodos = [
+  {
+    title: "Wash the dog",
+    content: "Strawberry shampoo"
+  },
+  {
+    title: "Walk the dog",
+    content: "in Richmond Park"
+  },
+  {
+    title: "Feed the dog",
+    content: "chicken"
+  },
+]
+  
+
 
 function App() {
   return (
@@ -13,7 +25,7 @@ function App() {
         <input type="text" value="" placeholder="content" name="content" />
         <input type="submit" value="submit" />
       </form>
-      <Todo todo={dummyTodo} />
+      <TodoList todos={dummyTodos} />
     </div>
   );
 }
