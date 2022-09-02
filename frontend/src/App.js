@@ -1,3 +1,4 @@
+import Todo from "./Todo";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <input type="text" value="" placeholder="content" name="content" />
         <input type="submit" value="submit" />
       </form>
+      <Todo />
     </div>
   );
 }
