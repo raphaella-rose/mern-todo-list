@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Todo = () => {
+const Todo = ({ todo }) => {
   return (
     <>
 			<div className='title'>
-				Title
+				{todo.title}
 			</div>
 			<div className='content'>
-				Content
+				{todo.content}
 			</div>
     </>
   );

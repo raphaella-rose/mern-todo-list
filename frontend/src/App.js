@@ -1,5 +1,10 @@
 import Todo from "./Todo";
 
+const dummyTodo = {
+  title: "Wash the dog",
+  content: "Strawberry shampoo"
+}
+
 function App() {
   return (
     <div className="App">
@@ -8,7 +13,7 @@ function App() {
         <input type="text" value="" placeholder="content" name="content" />
         <input type="submit" value="submit" />
       </form>
-      <Todo />
+      <Todo todo={dummyTodo} />
     </div>
   );
 }
